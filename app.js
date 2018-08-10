@@ -7,12 +7,13 @@ var assistant = new watson.AssistantV1({
     password: 'WR2bXia2KCvd',
     version: '2018-07-10'
 });
+//token facebook :V
 const APP_TOKEN='EAAEO5UiOUXABADYI1EZAjOyjbI4o7LAwaWmMgFozKiLtIh2FQUH849m74AFGNlzSsKZCKasfRZBxJhoCjgGfKn2LTTTRzQPPVBwZBUFZAwb1MlOnK3CGcVQ243p7FTJBZC5IBLBkzxOYqZBxHQlKoburUvhvQnz6nUQodaeh38KtkuZCsMdua6SX';
 var app=express();
 app.use(bodyParser.json());
 app.listen(3000,function() {
     console.log("Servidor  en 3000");    
-});
+});  
 app.get('/',function(req,res){
     res.send("Welcome to chatbot ")
 });
